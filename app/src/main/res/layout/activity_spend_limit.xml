@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SpendLimitActivity">
+
+    <TextView
+        android:id="@+id/tvSpendLimit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Spending Limit: ₹0"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount"
+        android:inputType="numberDecimal"
+        android:maxLength="10" />
+
+    <Button
+        android:id="@+id/btnUpdateLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Limit" />
+</LinearLayout>
